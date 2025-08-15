@@ -50,6 +50,7 @@ func init() {
 }
 
 func main() {
+        enableWL = false
 	flag.Parse()
 	if logPath != "" {
 		f, err := os.OpenFile("place.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
